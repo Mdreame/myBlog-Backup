@@ -1,0 +1,6 @@
+<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+  <% theme.widgets.forEach(function(widget){ %>
+    <%- partial('_widget/' + widget) %>
+  <% }) %>
+  <a class="to-top-btn" aria-hidden="true"><span>top</span></a>
+</aside>
